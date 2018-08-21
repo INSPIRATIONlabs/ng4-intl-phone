@@ -49,7 +49,7 @@ return Promise.resolve()
     const es5Entry = path.join(es5OutputFolder, `${libName}.js`);
     const es2015Entry = path.join(es2015OutputFolder, `${libName}.js`);
     const rollupBaseConfig = {
-      moduleName: camelCase(libName),
+      moduleName: '@inspirationlabs/' + camelCase(libName),
       sourceMap: true,
       // ATTENTION:
       // Add any dependency or peer dependency your library to `globals` and `external`.
